@@ -1,50 +1,50 @@
 [
-    {
-        "id": "0",
-        "name": "zBooks",
-        "products": [
-            {
-                "id": "0",
-                "name": "JavaScript Book",
-                "category": "Books"
-            },
-            {
-                "id": "1",
-                "name": "Html Book",
-                "category": "Books"
-            }
-        ]
-    },
-    {
-        "id": "1",
-        "name": "Cars",
-        "products": [
-            {
-                "id": "0",
-                "name": "Sedan",
-                "category": "Cars"
-            },
-            {
-                "id": "1",
-                "name": "SUV",
-                "category": "Cars"
-            }
-        ]
-    },
-    {
-        "id": "2",
-        "name": "Electronics",
-        "products": [
-            {
-                "id": "0",
-                "name": "Laptop",
-                "category": "Electronics"
-            },
-            {
-                "id": "1",
-                "name": "Smartphone",
-                "category": "Electronics"
-            }
-        ]
-    }
+  {
+    "id": 0,
+    "name": "zBooks",
+    "products": [
+      {
+        "id": 0,
+        "name": "JavaScript Book",
+        "category": "Books"
+      },
+      {
+        "id": 1,
+        "name": "Html Book",
+        "category": "Books"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Cars",
+    "products": [
+      {
+        "id": 0,
+        "name": "Sedan",
+        "category": "Cars"
+      },
+      {
+        "id": 1,
+        "name": "SUV",
+        "category": "Cars"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Electronics",
+    "products": [
+      {
+        "id": 0,
+        "name": "Laptop",
+        "category": "Electronics"
+      },
+      {
+        "id": 1,
+        "name": "Smartphone",
+        "category": "Electronics"
+      }
+    ]
+  }
 ]
