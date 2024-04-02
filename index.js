@@ -9,10 +9,10 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const userRoutes = require('./routers/usersRouter')
-const categoriesRouter = require('./routers/routerCategories')
-const checkRequestBodyMiddleware = require('./middlewares/CheckRequestBodyMiddleware')
-const logMiddleware = require('./middlewares/LogMIddleware')
+const userRoutes = require('./routers/usersRoutes')
+const categoriesRouter = require('./routers/categoriesRoutes')
+const checkRequestBodyMiddleware = require('./middlewares/checkRequestBodyMiddleware')
+const logMiddleware = require('./middlewares/logMIddleware')
 const authorizationMiddleware = require('./middlewares/authorizationMiddleware')
 
 const port = process.env.PORT || 3015

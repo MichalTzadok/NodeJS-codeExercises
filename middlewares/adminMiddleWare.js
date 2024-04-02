@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const adminMiddleware = (req, res, next) => {
+const AdminMiddleware = (req, res, next) => {
   const tokenHead = req.header('Authorization')
   const decoded = jwt.verify(tokenHead, 'secretkey')
   const userRole = decoded.role
@@ -10,4 +10,4 @@ const adminMiddleware = (req, res, next) => {
   next()
 }
 
-module.exports = adminMiddleware
+module.exports = AdminMiddleware
