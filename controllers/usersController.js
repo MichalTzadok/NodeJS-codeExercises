@@ -3,16 +3,16 @@ require('dotenv').config()
 const jwt = require('jsonwebtoken')
 const User = require('../classes/userClass')
 
-const userBl = require('../bl/usersBl')
+const userSVC = require('../services/userService')
 const generateAuthToken = async (user) => {
   const token = jwt.sign({ id: user.id, role: user.role }, process.env.JWT_SECRET)
   return token
 }
 
-exports.login = async (req, res) => {
+const login = async (req, res) => {
   const { username, password } = req.body
   try {
-    const user = userBl.getUsersByNameAndPassword(username, password)
+    const user = userSVC.getUsersByNameAndPassword(username, password)
     if (user === undefined) throw new Error('User not found.')
     const token = await generateAuthToken(user)
     res.send({ token })
@@ -21,7 +21,7 @@ exports.login = async (req, res) => {
   }
 }
 
-exports.signup = async (req, res) => {
+const signup = async (req, res) => {
   const { username, password, role } = req.body
   try {
     const newUser = new User(username, password, role)
@@ -31,4 +31,8 @@ exports.signup = async (req, res) => {
   } catch (error) {
     res.status(400).send({ error: 'Error creating user.' })
   }
+}
+module.exports = {
+  signup,
+  login
 }

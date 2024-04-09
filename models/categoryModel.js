@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const main = require('./db')
+const main = require('../services/dbService')
 main().catch(err => console.error('Could not connect to MongoDB', err))
 const Schema = mongoose.Schema
 
