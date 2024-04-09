@@ -62,19 +62,19 @@ Ensure you have a valid JWT token to access restricted endpoints. Regular users 
 ### Categories
 
 - `GET /api/categories`: Fetch all categories sorted alphabetically.
-- `GET /api/categories/:id`: Fetch a specific category by ID.
+- `GET /api/categories/:categoryName`: Fetch a specific category by ID.
 - `POST /api/categories`: Create a new category (admin only).
 - `PUT /api/categories/:id`: Update an existing category (admin only).
-- `DELETE /api/categories/:id`: Delete a category (admin only).
+- `DELETE /api/categories/:categoryName`: Delete a category (admin only).
 
 ### Products
 
-- `GET /api/products`: Fetch all products.
-- `GET /api/products/category/:categoryId`: Fetch all products belonging to a specific category.
-- `GET /api/products/category/:categoryId/:productId`: Fetch a specific product from a specific category.
-- `POST /api/products`: Create a new product (admin only).
-- `PUT /api/products/:id`: Update an existing product (admin only).
-- `DELETE /api/products/:id`: Delete a product (admin only).
+- `GET /api/products/categoryName`: Fetch all products by.
+- `GET /api/products/category/:categoryName`: Fetch all products belonging to a specific category.
+- `GET /api/products/- `GET /api/products/category/:categoryId`: Fetch all products belonging to a specific category.`: Fetch a specific product from a specific category.
+- `POST /api/products/:categoryName`: Create a new product in a specific category. (admin only).
+- `PUT /api/products/:categoryName`: Update an existing product in a specific category.(admin only).
+- `DELETE /api/products/:categoryName/:productName`: Delete a product in a specific category. (admin only).
 
 ### Users
 
